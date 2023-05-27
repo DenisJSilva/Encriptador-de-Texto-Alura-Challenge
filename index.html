@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title> Encriptador </title>
+</head>
+<body>
+    <header>
+        <h1 class="tituloprincipal">Encriptador de Texto</h1>
+    </header>
+    <main>
+        <section class="encriptador">
+            <textarea name="entrada"  cols="36" rows="13" id="textoentrada"  placeholder="Introduzca el texto que desea encriptar" required></textarea>
+            <button onclick="encriptar()" class="boton">Encriptar</button>
+            <button onclick="desencriptar()" class="boton">Des-encriptar</button>
+            <textarea name="Salida"   cols="16" rows="13" id="salida" disabled>Todavia no se ingreso ningun texto</textarea>
+            <button onclick="copiar()" class="boton">Copiar</button>
+            
+        </section>
+    </main>
+    <footer>
+        <h1>&copy Denis Daniel Julian Silva - 2023</h1>
+        <h2>Alura Challenge - Grupo 5</h2>
+    </footer>
+</body>
+</html>

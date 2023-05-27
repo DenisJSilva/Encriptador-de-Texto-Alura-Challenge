@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300&display=swap');
+
+body {
+    background: url(Imagenes/fondo2.jpg);
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px;
+    
+}
+header{
+    padding: 3em;
+    background-color: royalblue;
+}
+.tituloprincipal{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+}
+main {
+    background-color: royalblue;
+}
+.encriptador {
+    position: relative;
+    width: 945px;
+    margin: 0 auto;
+    
+}
+textarea#textoentrada {
+    
+    font-size: 2.35em;
+    box-sizing: border-box;
+    width: 70%;
+    height: 400px;
+}
+
+textarea#salida {
+    position: absolute;
+    top: 0;
+    left: 101%; 
+    transform: translateX(-100%);
+    font-size: 2.35em;
+    box-sizing: border-box;
+    width: 30%;
+    height: 400px;
+}
+
+.boton {
+    margin: 2em 2em;
+    display: inline-block;
+    border-color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 0.9em;
+    background: #4E94CF;
+    width: 250px;
+    height: 3em;
+    transition: background 0.3s, transform 0.3s ;
+}
+.boton:hover{
+    background: #174368;
+    transform: scale(1.2);
+}
+footer {
+    background-color: royalblue;
+    padding-top: 2em;
+}
+footer h1, h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 480px) {  
+    body {
+        width: auto;
+        margin: auto;
+    }
+    .encriptador {
+        width: auto;
+    }
+    textarea#textoentrada{
+        width: 69%;
+        left: 10%;
+    }
+    textarea#salida{
+        width: 29%;
+        left: 99%;
+    }
+    }
+
+    @media screen and (max-width: 768px) {
+    body {
+        width: auto;
+        margin: auto;
+    }
+    .encriptador {
+        width: auto;
+    }
+    textarea#salida{
+        width: 30%;
+        left: 99%;
+    }
+    }
+    
+    @media screen and (max-width: 1023px){
+        body {
+        width: auto;
+        margin: auto;
+    }
+    .encriptador {
+        width: auto;
+    }
+    textarea#salida{
+        width: 29%;
+        left: 99%;
+    }
+}
